@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80F2606A291299110093C6C5 /* WallabyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F26069291299110093C6C5 /* WallabyApp.swift */; };
+		80F2606C291299110093C6C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2606B291299110093C6C5 /* ContentView.swift */; };
+		80F2606E291299160093C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F2606D291299160093C6C5 /* Assets.xcassets */; };
+		80F26071291299160093C6C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F26070291299160093C6C5 /* Preview Assets.xcassets */; };
+		80F2607B291299160093C6C5 /* WallabyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2607A291299160093C6C5 /* WallabyTests.swift */; };
+		80F26085291299170093C6C5 /* WallabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F26084291299170093C6C5 /* WallabyUITests.swift */; };
+		80F26087291299170093C6C5 /* WallabyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F26086291299170093C6C5 /* WallabyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80F26077291299160093C6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80F2605E291299110093C6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F26065291299110093C6C5;
+			remoteInfo = Wallaby;
+		};
+		80F26081291299170093C6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80F2605E291299110093C6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F26065291299110093C6C5;
+			remoteInfo = Wallaby;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80F26066291299110093C6C5 /* Wallaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F26069291299110093C6C5 /* WallabyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyApp.swift; sourceTree = "<group>"; };
+		80F2606B291299110093C6C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80F2606D291299160093C6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80F26070291299160093C6C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80F26076291299160093C6C5 /* WallabyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallabyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F2607A291299160093C6C5 /* WallabyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyTests.swift; sourceTree = "<group>"; };
+		80F26080291299170093C6C5 /* WallabyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallabyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F26084291299170093C6C5 /* WallabyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyUITests.swift; sourceTree = "<group>"; };
+		80F26086291299170093C6C5 /* WallabyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80F26063291299110093C6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F26073291299160093C6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F2607D291299170093C6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80F2605D291299110093C6C5 = {
+			isa = PBXGroup;
+			children = (
+				80F26068291299110093C6C5 /* Wallaby */,
+				80F26079291299160093C6C5 /* WallabyTests */,
+				80F26083291299170093C6C5 /* WallabyUITests */,
+				80F26067291299110093C6C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80F26067291299110093C6C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80F26066291299110093C6C5 /* Wallaby.app */,
+				80F26076291299160093C6C5 /* WallabyTests.xctest */,
+				80F26080291299170093C6C5 /* WallabyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80F26068291299110093C6C5 /* Wallaby */ = {
+			isa = PBXGroup;
+			children = (
+				80F26069291299110093C6C5 /* WallabyApp.swift */,
+				80F2606B291299110093C6C5 /* ContentView.swift */,
+				80F2606D291299160093C6C5 /* Assets.xcassets */,
+				80F2606F291299160093C6C5 /* Preview Content */,
+			);
+			path = Wallaby;
+			sourceTree = "<group>";
+		};
+		80F2606F291299160093C6C5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				80F26070291299160093C6C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80F26079291299160093C6C5 /* WallabyTests */ = {
+			isa = PBXGroup;
+			children = (
+				80F2607A291299160093C6C5 /* WallabyTests.swift */,
+			);
+			path = WallabyTests;
+			sourceTree = "<group>";
+		};
+		80F26083291299170093C6C5 /* WallabyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80F26084291299170093C6C5 /* WallabyUITests.swift */,
+				80F26086291299170093C6C5 /* WallabyUITestsLaunchTests.swift */,
+			);
+			path = WallabyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80F26065291299110093C6C5 /* Wallaby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F2608A291299170093C6C5 /* Build configuration list for PBXNativeTarget "Wallaby" */;
+			buildPhases = (
+				80F26062291299110093C6C5 /* Sources */,
+				80F26063291299110093C6C5 /* Frameworks */,
+				80F26064291299110093C6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wallaby;
+			productName = Wallaby;
+			productReference = 80F26066291299110093C6C5 /* Wallaby.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80F26075291299160093C6C5 /* WallabyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F2608D291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyTests" */;
+			buildPhases = (
+				80F26072291299160093C6C5 /* Sources */,
+				80F26073291299160093C6C5 /* Frameworks */,
+				80F26074291299160093C6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80F26078291299160093C6C5 /* PBXTargetDependency */,
+			);
+			name = WallabyTests;
+			productName = WallabyTests;
+			productReference = 80F26076291299160093C6C5 /* WallabyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80F2607F291299170093C6C5 /* WallabyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F26090291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyUITests" */;
+			buildPhases = (
+				80F2607C291299170093C6C5 /* Sources */,
+				80F2607D291299170093C6C5 /* Frameworks */,
+				80F2607E291299170093C6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80F26082291299170093C6C5 /* PBXTargetDependency */,
+			);
+			name = WallabyUITests;
+			productName = WallabyUITests;
+			productReference = 80F26080291299170093C6C5 /* WallabyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80F2605E291299110093C6C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					80F26065291299110093C6C5 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					80F26075291299160093C6C5 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 80F26065291299110093C6C5;
+					};
+					80F2607F291299170093C6C5 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 80F26065291299110093C6C5;
+					};
+				};
+			};
+			buildConfigurationList = 80F26061291299110093C6C5 /* Build configuration list for PBXProject "Wallaby" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80F2605D291299110093C6C5;
+			productRefGroup = 80F26067291299110093C6C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80F26065291299110093C6C5 /* Wallaby */,
+				80F26075291299160093C6C5 /* WallabyTests */,
+				80F2607F291299170093C6C5 /* WallabyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80F26064291299110093C6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F26071291299160093C6C5 /* Preview Assets.xcassets in Resources */,
+				80F2606E291299160093C6C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F26074291299160093C6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F2607E291299170093C6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80F26062291299110093C6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F2606C291299110093C6C5 /* ContentView.swift in Sources */,
+				80F2606A291299110093C6C5 /* WallabyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F26072291299160093C6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F2607B291299160093C6C5 /* WallabyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F2607C291299170093C6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F26085291299170093C6C5 /* WallabyUITests.swift in Sources */,
+				80F26087291299170093C6C5 /* WallabyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80F26078291299160093C6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F26065291299110093C6C5 /* Wallaby */;
+			targetProxy = 80F26077291299160093C6C5 /* PBXContainerItemProxy */;
+		};
+		80F26082291299170093C6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F26065291299110093C6C5 /* Wallaby */;
+			targetProxy = 80F26081291299170093C6C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		80F26088291299170093C6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80F26089291299170093C6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80F2608B291299170093C6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wallaby/Preview Content\"";
+				DEVELOPMENT_TEAM = M525S4B69N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atd.Wallaby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80F2608C291299170093C6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wallaby/Preview Content\"";
+				DEVELOPMENT_TEAM = M525S4B69N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atd.Wallaby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80F2608E291299170093C6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M525S4B69N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallaby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wallaby";
+			};
+			name = Debug;
+		};
+		80F2608F291299170093C6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M525S4B69N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallaby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wallaby";
+			};
+			name = Release;
+		};
+		80F26091291299170093C6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M525S4B69N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wallaby;
+			};
+			name = Debug;
+		};
+		80F26092291299170093C6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M525S4B69N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wallaby;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80F26061291299110093C6C5 /* Build configuration list for PBXProject "Wallaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F26088291299170093C6C5 /* Debug */,
+				80F26089291299170093C6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F2608A291299170093C6C5 /* Build configuration list for PBXNativeTarget "Wallaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F2608B291299170093C6C5 /* Debug */,
+				80F2608C291299170093C6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F2608D291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F2608E291299170093C6C5 /* Debug */,
+				80F2608F291299170093C6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F26090291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F26091291299170093C6C5 /* Debug */,
+				80F26092291299170093C6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80F2605E291299110093C6C5 /* Project object */;
+}
