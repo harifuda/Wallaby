@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct Note {
-	var id: UUID
-	var text: String
+struct Note: Identifiable, Codable {
+	@DocumentID var id: String? = ""
+	var text: String = ""
 }

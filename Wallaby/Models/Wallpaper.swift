@@ -6,18 +6,31 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct Wallpaper: Identifiable, Codable {
-	var id: UUID = UUID()
+
+	@DocumentID var id: String?
 	var wallpaperId: String = ""
-	var url: [String: String] = [:]
-	var author: Author
-	var favorited: Bool = true
-	var notes: [Note] = []
-	
+	var urls: Url? = nil
+	var author: Author? = nil
+	var likedByUser: Bool = false
+
 	enum CodingKeys: String, CodingKey {
 		case wallpaperId = "id"
-		case url = "urls"
+		case urls = "urls"
 		case author = "user"
+		case likedByUser = "liked_by_user"
+	}
+	
+	init() {}
+	init(wallpaperId: String, urls: Url?, author: Author?, likedByUser: Bool) {
+		self.wallpaperId = wallpaperId
+		self.urls = urls
+		self.author = author
+		self.likedByUser = likedByUser
 	}
 }
+
+let test = Wallpaper(wallpaperId: "MYomVPpR5FU", urls: Url(raw: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3", full: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3&q=80", regular: "", small: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3&q=80&w=400", thumb: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3&q=80&w=200", smalls3: "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1664575197229-3bbebc281874"), author: Author(authorID: "kSlnstJTnY8", authorUsername: "windows", authorName: "Windows", bio: "Makes the everyday easier.", location: nil), likedByUser: false)
+let test2 = Wallpaper(wallpaperId: "MYomVPpR5FU", urls: Url(raw: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3", full: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3&q=80", regular: "", small: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3&q=80&w=400", thumb: "https://images.unsplash.com/photo-1664575197229-3bbebc281874?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzY3NTl8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2OTM4ODUxMw&ixlib=rb-4.0.3&q=80&w=200", smalls3: "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1664575197229-3bbebc281874"), author: Author(authorID: "kSlnstJTnY8", authorUsername: "windows", authorName: "Windows", bio: "Makes the everyday easier.", location: nil), likedByUser: false)

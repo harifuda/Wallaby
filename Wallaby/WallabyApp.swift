@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct WallabyApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	var body: some Scene {
+		
+		init() {
+			FirebaseApp.configure()
+		}
+		
+		WindowGroup {
+			ContentView()
+		}
+	}
 }

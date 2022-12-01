@@ -7,20 +7,19 @@
 
 import SwiftUI
 
-struct Author: Identifiable, Codable {
+struct Author: Codable {
 	
-	var id: UUID = UUID()
-	var authorID: String = ""
-	var authorUsername: String = ""
-	var authorName: String = ""
-	var bio: String = ""
-	var location: String = ""
-	var socialLinks: [String: String] = [:]
+	var authorID: String? = ""
+	var authorUsername: String? = ""
+	var authorName: String? = ""
+	var bio: String? = ""
+	var location: String? = ""
+	
 	enum CodingKeys: String, CodingKey {
 		case authorID = "id"
 		case authorUsername = "username"
 		case authorName = "name"
 		case bio = "bio"
-		case socialLinks = "social"
+		case location = "location"
 	}
 }

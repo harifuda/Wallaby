@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8066BDE2293117EC00C3C6D7 /* WallpaperRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */; };
+		8066BDE42931192100C3C6D7 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE32931192100C3C6D7 /* NoteRepository.swift */; };
+		8066BDE729311AB000C3C6D7 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */; };
+		8066BDE929311AC100C3C6D7 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE829311AC100C3C6D7 /* WallpaperView.swift */; };
+		8066BDEB29311AE700C3C6D7 /* WallpaperDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDEA29311AE700C3C6D7 /* WallpaperDetailsView.swift */; };
+		80747A38292DAD1600D6DFB8 /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80747A37292DAD1600D6DFB8 /* Url.swift */; };
 		8084C17229252D0200AA3BB3 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17129252D0200AA3BB3 /* Wallpaper.swift */; };
 		8084C17429252DE600AA3BB3 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17329252DE600AA3BB3 /* Author.swift */; };
 		8084C17629252E1300AA3BB3 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17529252E1300AA3BB3 /* Note.swift */; };
@@ -16,6 +22,7 @@
 		80C293B629287A3C00FEA9BA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B529287A3C00FEA9BA /* WebService.swift */; };
 		80C293B729287A3C00FEA9BA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B529287A3C00FEA9BA /* WebService.swift */; };
 		80C293B829287A3C00FEA9BA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B529287A3C00FEA9BA /* WebService.swift */; };
+		80C6EC9D29364A0800835BFD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6EC9C29364A0800835BFD /* ImageSaver.swift */; };
 		80D178B4292A726D005BBD67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D178B3292A726D005BBD67 /* GoogleService-Info.plist */; };
 		80D178B5292A726D005BBD67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D178B3292A726D005BBD67 /* GoogleService-Info.plist */; };
 		80D178B6292A726D005BBD67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D178B3292A726D005BBD67 /* GoogleService-Info.plist */; };
@@ -51,11 +58,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperRepository.swift; sourceTree = "<group>"; };
+		8066BDE32931192100C3C6D7 /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
+		8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		8066BDE829311AC100C3C6D7 /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
+		8066BDEA29311AE700C3C6D7 /* WallpaperDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetailsView.swift; sourceTree = "<group>"; };
+		80747A37292DAD1600D6DFB8 /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
 		8084C17129252D0200AA3BB3 /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
 		8084C17329252DE600AA3BB3 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		8084C17529252E1300AA3BB3 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		80C293B029282BC500FEA9BA /* WallpaperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperViewModel.swift; sourceTree = "<group>"; };
 		80C293B529287A3C00FEA9BA /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		80C6EC9C29364A0800835BFD /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		80D178B3292A726D005BBD67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80F26066291299110093C6C5 /* Wallaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F26069291299110093C6C5 /* WallabyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyApp.swift; sourceTree = "<group>"; };
@@ -99,10 +113,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8066BDE0293117D200C3C6D7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */,
+				8066BDE32931192100C3C6D7 /* NoteRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8066BDE529311A9C00C3C6D7 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */,
+				8066BDE829311AC100C3C6D7 /* WallpaperView.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
 		8084C16F29252CE900AA3BB3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8066BDE529311A9C00C3C6D7 /* Reusables */,
 				80F2606B291299110093C6C5 /* ContentView.swift */,
+				8066BDEA29311AE700C3C6D7 /* WallpaperDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +147,7 @@
 				8084C17129252D0200AA3BB3 /* Wallpaper.swift */,
 				8084C17329252DE600AA3BB3 /* Author.swift */,
 				8084C17529252E1300AA3BB3 /* Note.swift */,
+				80747A37292DAD1600D6DFB8 /* Url.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				80C293B529287A3C00FEA9BA /* WebService.swift */,
+				80C6EC9C29364A0800835BFD /* ImageSaver.swift */,
 			);
 			path = Functionalities;
 			sourceTree = "<group>";
@@ -156,6 +192,7 @@
 		80F26068291299110093C6C5 /* Wallaby */ = {
 			isa = PBXGroup;
 			children = (
+				8066BDE0293117D200C3C6D7 /* Repositories */,
 				80D178B3292A726D005BBD67 /* GoogleService-Info.plist */,
 				80C293B429287A2900FEA9BA /* Functionalities */,
 				80C293AD29282B8400FEA9BA /* ViewModels */,
@@ -280,7 +317,7 @@
 				};
 			};
 			buildConfigurationList = 80F26061291299110093C6C5 /* Build configuration list for PBXProject "Wallaby" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -336,13 +373,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8066BDE2293117EC00C3C6D7 /* WallpaperRepository.swift in Sources */,
+				8066BDE929311AC100C3C6D7 /* WallpaperView.swift in Sources */,
 				8084C17629252E1300AA3BB3 /* Note.swift in Sources */,
 				80F2606C291299110093C6C5 /* ContentView.swift in Sources */,
+				80C6EC9D29364A0800835BFD /* ImageSaver.swift in Sources */,
+				8066BDE42931192100C3C6D7 /* NoteRepository.swift in Sources */,
 				80C293B629287A3C00FEA9BA /* WebService.swift in Sources */,
+				8066BDEB29311AE700C3C6D7 /* WallpaperDetailsView.swift in Sources */,
 				8084C17229252D0200AA3BB3 /* Wallpaper.swift in Sources */,
 				8084C17429252DE600AA3BB3 /* Author.swift in Sources */,
 				80F2606A291299110093C6C5 /* WallabyApp.swift in Sources */,
 				80C293B129282BC500FEA9BA /* WallpaperViewModel.swift in Sources */,
+				80747A38292DAD1600D6DFB8 /* Url.swift in Sources */,
+				8066BDE729311AB000C3C6D7 /* ThumbnailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,11 +552,13 @@
 				DEVELOPMENT_TEAM = M525S4B69N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your chosen wallpaper to your Photo Library ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,11 +583,13 @@
 				DEVELOPMENT_TEAM = M525S4B69N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your chosen wallpaper to your Photo Library ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

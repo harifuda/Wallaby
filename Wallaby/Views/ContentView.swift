@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+	@StateObject var viewModel: WallpaperViewModel = WallpaperViewModel()
+	//var wallpapers = [test,test2]
+	let columns = [GridItem(.flexible()), GridItem(.flexible())]
 	var body: some View {
-		
-		let imageURL = URL(string: "https://images.unsplash.com/photo-1649289262759-7892e0239840?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=982&q=80")
+		NavigationView {
+			ScrollView {
+				LazyVGrid(columns: columns, spacing: 11) {
 
-		AsyncImage(url: imageURL) { image in
-			image
-				.resizable()
-				.aspectRatio(contentMode: .fit)
-		} placeholder: {
-			ProgressView()
-				.progressViewStyle(.automatic)
+					ForEach(viewModel.wallpapers, id:\.wallpaperId) {
+						image in
+						HStack{
+							NavigationLink(destination: WallpaperView(wallpaper: image)) {
+								ThumbnailView(wallpaper: image)
+							}
+						}
+					}
+				}
+				.navigationTitle(Text("Wallaby"))
+			}
 		}
+		
 	}
 }
 
