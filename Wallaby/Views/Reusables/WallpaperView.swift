@@ -13,7 +13,7 @@ struct WallpaperView: View {
 	var viewModel = WallpaperViewModel()
 	@State private var showAlert = false
 	@State private var showFavoritedAlert = false
-	
+	@State var liked: Bool = false
 	var body: some View {
 		VStack {
 			if let imageURL = URL(string: wallpaper.urls?.full ?? "none") {
@@ -46,7 +46,7 @@ struct WallpaperView: View {
 			}
 		}
 		.toolbar {
-			ToolbarItemGroup(placement: .primaryAction) {
+			ToolbarItemGroup {
 				Button {
 					viewModel.favoriteWallpaper(wallpaper: wallpaper)
 					showFavoritedAlert = true
@@ -60,39 +60,38 @@ struct WallpaperView: View {
 							.font(.subheadline)
 							.foregroundColor(.white)
 					}
-				}
-				.alert(isPresented: $showFavoritedAlert) {
-					Alert(
-						title: Text("Favorited wallpaper."),
-						dismissButton: .default(Text("OK"))
-					)
-				}
-				
-				Button {
-					viewModel.downloadWallpaper(urlString: wallpaper.urls!.full)
-					showAlert = true
-					
-				} label: {
-					ZStack {
-						Color(.green)
-							.frame(width: 40, height: 40)
-							.clipShape(Circle())
+					.alert(isPresented: $showFavoritedAlert) {
+						Alert(
+							title: Text("Favorited wallpaper."),
+							dismissButton: .default(Text("OK"))
+						)
+					}
 						
-						Image(systemName: "square.and.arrow.down")
-							.font(.subheadline)
-							.foregroundColor(.white)
+					Button {
+						viewModel.downloadWallpaper(urlString: wallpaper.urls!.full)
+						showAlert = true
+						
+					} label: {
+						ZStack {
+							Color(.green)
+								.frame(width: 40, height: 40)
+								.clipShape(Circle())
+							
+							Image(systemName: "square.and.arrow.down")
+								.font(.subheadline)
+								.foregroundColor(.white)
+						}
+					}
+					.alert(isPresented: $showAlert) {
+						Alert(
+							title: Text("Success!"),
+							dismissButton: .default(Text("OK"))
+						)
 					}
 				}
-				.alert(isPresented: $showAlert) {
-					Alert(
-						title: Text("Success!"),
-						dismissButton: .default(Text("OK"))
-					)
-				}
 			}
+			
 		}
-		
-		
 	}
 }
 struct WallpaperView_Previews: PreviewProvider {

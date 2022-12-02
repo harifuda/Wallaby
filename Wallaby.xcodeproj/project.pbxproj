@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8016A24A293A4B63002EEFD7 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A249293A4B63002EEFD7 /* NotesView.swift */; };
 		8016A24C293A55A0002EEFD7 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A24B293A55A0002EEFD7 /* FavoritesView.swift */; };
+		8016A24F293A5A88002EEFD7 /* FavoriteToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A24E293A5A88002EEFD7 /* FavoriteToggleStyle.swift */; };
 		8066BDE2293117EC00C3C6D7 /* WallpaperRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */; };
 		8066BDE42931192100C3C6D7 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE32931192100C3C6D7 /* NoteRepository.swift */; };
 		8066BDE729311AB000C3C6D7 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		8016A249293A4B63002EEFD7 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		8016A24B293A55A0002EEFD7 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		8016A24E293A5A88002EEFD7 /* FavoriteToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteToggleStyle.swift; sourceTree = "<group>"; };
 		8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperRepository.swift; sourceTree = "<group>"; };
 		8066BDE32931192100C3C6D7 /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
 		8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8016A24D293A5A67002EEFD7 /* ToggleButton */ = {
+			isa = PBXGroup;
+			children = (
+				8016A24E293A5A88002EEFD7 /* FavoriteToggleStyle.swift */,
+			);
+			path = ToggleButton;
+			sourceTree = "<group>";
+		};
 		8066BDE0293117D200C3C6D7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		8084C16F29252CE900AA3BB3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8016A24D293A5A67002EEFD7 /* ToggleButton */,
 				8066BDE529311A9C00C3C6D7 /* Reusables */,
 				80F2606B291299110093C6C5 /* ContentView.swift */,
 				8016A249293A4B63002EEFD7 /* NotesView.swift */,
@@ -383,6 +394,7 @@
 				80F2606C291299110093C6C5 /* ContentView.swift in Sources */,
 				80C6EC9D29364A0800835BFD /* ImageSaver.swift in Sources */,
 				8066BDE42931192100C3C6D7 /* NoteRepository.swift in Sources */,
+				8016A24F293A5A88002EEFD7 /* FavoriteToggleStyle.swift in Sources */,
 				80C293B629287A3C00FEA9BA /* WebService.swift in Sources */,
 				8084C17229252D0200AA3BB3 /* Wallpaper.swift in Sources */,
 				8084C17429252DE600AA3BB3 /* Author.swift in Sources */,
