@@ -10,12 +10,12 @@ import Firebase
 
 @main
 struct WallabyApp: App {
+	
+	init() {
+		FirebaseApp.configure()
+	}
+	
 	var body: some Scene {
-		
-		init() {
-			FirebaseApp.configure()
-		}
-		
 		WindowGroup {
 			ContentView()
 		}

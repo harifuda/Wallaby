@@ -11,7 +11,6 @@ class WallpaperViewModel: ObservableObject {
 	@Published var wallpaperRepository = WallpaperRepository.shared
 	@Published var webService = WebService.shared
 	@Published var wallpapers = [Wallpaper]()
-	
 	private var cancellables: Set<AnyCancellable> = []
 
 	init() {
@@ -21,15 +20,15 @@ class WallpaperViewModel: ObservableObject {
 		
 	}
 	
-	func getFavorites() {
-		
-	}
-	
 	func favoriteWallpaper(wallpaper: Wallpaper) {
-	
+		self.wallpaperRepository.add(wallpaper)
 	}
 	
 	func unfavoriteWallpaper(wallpaper: Wallpaper) {
-		
+		self.wallpaperRepository.delete(wallpaper)
+	}
+	
+	func downloadWallpaper(urlString: String) {
+		webService.downloadWallpaper(wallpaperURL: urlString)
 	}
 }

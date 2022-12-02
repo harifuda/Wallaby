@@ -27,7 +27,6 @@ class WebService: ObservableObject {
 						let wallpapers = try JSONDecoder().decode([Wallpaper].self, from: response)
 						
 						for wallpaper in wallpapers {
-							//print(wallpaper)
 							self.jsonWallpapers.append(wallpaper)
 						}
 						print(self.jsonWallpapers.count)
@@ -41,6 +40,24 @@ class WebService: ObservableObject {
 			}
 			.resume()
 		}
+		
+	}
+	
+	func downloadWallpaper(wallpaperURL: String){
+		if let urlString = URL(string:wallpaperURL) {
 			
+			let request = URLRequest(url: urlString)
+			URLSession.shared.dataTask(with: request) { data, response, error in
+				if let data = try? Data(contentsOf: urlString) {
+					
+					let image: UIImage = UIImage(data: data)!
+					let imageSaver = ImageSaver()
+					imageSaver.writeToPhotoAlbum(image: image)
+				}
+			}
+			.resume()
+		}
+		
 	}
 }
+

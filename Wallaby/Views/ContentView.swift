@@ -12,10 +12,11 @@ struct ContentView: View {
 	//var wallpapers = [test,test2]
 	let columns = [GridItem(.flexible()), GridItem(.flexible())]
 	var body: some View {
+		
 		NavigationView {
 			ScrollView {
+				
 				LazyVGrid(columns: columns, spacing: 11) {
-
 					ForEach(viewModel.wallpapers, id:\.wallpaperId) {
 						image in
 						HStack{
