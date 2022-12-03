@@ -28,7 +28,7 @@ struct FavoriteToggleStyle: ToggleStyle {
 														   .foregroundColor(configuration.isOn ? .pink : .gray)
 						)
 						.offset(x: configuration.isOn ? 11 : -11, y: 0)
-						.animation(Animation.linear, value: 0.1)
+						.animation(Animation.linear(duration: 0.6))
 				)
 				.cornerRadius(21)
 				.onTapGesture {

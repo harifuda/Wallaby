@@ -16,6 +16,7 @@ struct WallpaperView: View {
 	@State var liked: Bool = false
 	var body: some View {
 		VStack {
+			
 			if let imageURL = URL(string: wallpaper.urls?.full ?? "none") {
 				AsyncImage(url: imageURL) { image in
 					image
@@ -47,53 +48,63 @@ struct WallpaperView: View {
 		}
 		.toolbar {
 			ToolbarItemGroup {
+				//				Button {
+				//					viewModel.favoriteWallpaper(wallpaper: wallpaper)
+				//					liked = true
+				//					showFavoritedAlert = true
+				//				} label: {
+				//					ZStack {
+				//						Color(.red)
+				//							.frame(width: 40, height: 40)
+				//							.clipShape(Circle())
+				//
+				//						Image(systemName: "heart")
+				//							.font(.subheadline)
+				//							.foregroundColor(.white)
+				//					}
+				
+				Toggle("Favorite", isOn: $liked)
+					.onChange(of: self.liked, perform: { newValue in
+						print("Value changed: \(newValue)")
+						viewModel.favoriteWallpaper(wallpaper: wallpaper)
+					})
+					.toggleStyle(FavoriteToggleStyle())
+					.labelsHidden()
+				//
+				//					.alert(isPresented: $showFavoritedAlert) {
+				//						Alert(
+				//							title: Text("Favorited wallpaper."),
+				//							dismissButton: .default(Text("OK"))
+				//						)
+				//					}
+				//
 				Button {
-					viewModel.favoriteWallpaper(wallpaper: wallpaper)
-					showFavoritedAlert = true
+					viewModel.downloadWallpaper(urlString: wallpaper.urls!.full)
+					showAlert = true
+					
 				} label: {
 					ZStack {
-						Color(.red)
+						Color(.green)
 							.frame(width: 40, height: 40)
 							.clipShape(Circle())
 						
-						Image(systemName: "heart")
+						Image(systemName: "square.and.arrow.down")
 							.font(.subheadline)
 							.foregroundColor(.white)
 					}
-					.alert(isPresented: $showFavoritedAlert) {
-						Alert(
-							title: Text("Favorited wallpaper."),
-							dismissButton: .default(Text("OK"))
-						)
-					}
-						
-					Button {
-						viewModel.downloadWallpaper(urlString: wallpaper.urls!.full)
-						showAlert = true
-						
-					} label: {
-						ZStack {
-							Color(.green)
-								.frame(width: 40, height: 40)
-								.clipShape(Circle())
-							
-							Image(systemName: "square.and.arrow.down")
-								.font(.subheadline)
-								.foregroundColor(.white)
-						}
-					}
-					.alert(isPresented: $showAlert) {
-						Alert(
-							title: Text("Success!"),
-							dismissButton: .default(Text("OK"))
-						)
-					}
+				}
+				.alert(isPresented: $showAlert) {
+					Alert(
+						title: Text("Success!"),
+						dismissButton: .default(Text("OK"))
+					)
 				}
 			}
-			
 		}
 	}
 }
+
+
 struct WallpaperView_Previews: PreviewProvider {
 	static var previews: some View {
 		WallpaperView()

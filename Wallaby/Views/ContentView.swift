@@ -27,6 +27,12 @@ struct ContentView: View {
 					}
 				}
 				.navigationTitle(Text("Wallaby"))
+				.toolbar {
+					NavigationLink(destination: FavoritesView()) {
+						Image(systemName: "square.stack")
+							.foregroundColor(.mint)
+					}
+				}
 			}
 		}
 		
