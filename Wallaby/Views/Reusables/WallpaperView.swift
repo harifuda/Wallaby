@@ -67,9 +67,11 @@ struct WallpaperView: View {
 					.onChange(of: self.liked, perform: { newValue in
 						print("Value changed: \(newValue)")
 						viewModel.favoriteWallpaper(wallpaper: wallpaper)
+						liked = true
 					})
-					.toggleStyle(FavoriteToggleStyle())
 					.labelsHidden()
+					.toggleStyle(FavoriteToggleStyle())
+					
 				//
 				//					.alert(isPresented: $showFavoritedAlert) {
 				//						Alert(

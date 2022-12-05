@@ -8,8 +8,35 @@
 import SwiftUI
 
 struct FavoritesView: View {
+	@StateObject var viewModel: WallpaperViewModel = WallpaperViewModel()
+
+	@State var selectedWallpaper: Wallpaper?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		TabView {
+			NavigationView {
+				ScrollView {
+					ForEach(viewModel.getFavorites(), id: \.wallpaperId) { image in
+							ThumbnailView(wallpaper: image)
+							.onTapGesture {
+								self.selectedWallpaper = image
+							}
+					}
+				}
+			}
+			.tabItem() {
+				Label("Favorites", systemImage: "heart.circle.fill")
+			}
+			.sheet(item: $selectedWallpaper) { selected in
+				WallpaperView(wallpaper: selected)
+			}
+
+			
+
+			NotesView()
+			.tabItem() {
+				Label("Notes", systemImage: "note.text")
+			}
+		}
     }
 }
 

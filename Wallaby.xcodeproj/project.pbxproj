@@ -10,10 +10,13 @@
 		8016A24A293A4B63002EEFD7 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A249293A4B63002EEFD7 /* NotesView.swift */; };
 		8016A24C293A55A0002EEFD7 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A24B293A55A0002EEFD7 /* FavoritesView.swift */; };
 		8016A24F293A5A88002EEFD7 /* FavoriteToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A24E293A5A88002EEFD7 /* FavoriteToggleStyle.swift */; };
+		8053C537293BAE780045338E /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053C536293BAE780045338E /* NoteViewModel.swift */; };
+		8053C53C293BB1B90045338E /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 8053C53B293BB1B90045338E /* SwiftUIPager */; };
 		8066BDE2293117EC00C3C6D7 /* WallpaperRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */; };
 		8066BDE42931192100C3C6D7 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE32931192100C3C6D7 /* NoteRepository.swift */; };
 		8066BDE729311AB000C3C6D7 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */; };
 		8066BDE929311AC100C3C6D7 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BDE829311AC100C3C6D7 /* WallpaperView.swift */; };
+		806B79BC293CFD0C004F29FB /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B79BB293CFD0C004F29FB /* WriterView.swift */; };
 		80747A38292DAD1600D6DFB8 /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80747A37292DAD1600D6DFB8 /* Url.swift */; };
 		8084C17229252D0200AA3BB3 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17129252D0200AA3BB3 /* Wallpaper.swift */; };
 		8084C17429252DE600AA3BB3 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17329252DE600AA3BB3 /* Author.swift */; };
@@ -63,10 +66,12 @@
 		8016A249293A4B63002EEFD7 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		8016A24B293A55A0002EEFD7 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		8016A24E293A5A88002EEFD7 /* FavoriteToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteToggleStyle.swift; sourceTree = "<group>"; };
+		8053C536293BAE780045338E /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		8066BDE1293117EC00C3C6D7 /* WallpaperRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperRepository.swift; sourceTree = "<group>"; };
 		8066BDE32931192100C3C6D7 /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
 		8066BDE629311AB000C3C6D7 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
 		8066BDE829311AC100C3C6D7 /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
+		806B79BB293CFD0C004F29FB /* WriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
 		80747A37292DAD1600D6DFB8 /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
 		8084C17129252D0200AA3BB3 /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
 		8084C17329252DE600AA3BB3 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 			files = (
 				80D178C1292A908F005BBD67 /* FirebaseFirestoreSwift in Frameworks */,
 				80D178BB292A908F005BBD67 /* FirebaseDatabaseSwift in Frameworks */,
+				8053C53C293BB1B90045338E /* SwiftUIPager in Frameworks */,
 				80D178BF292A908F005BBD67 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				80D178B9292A908F005BBD67 /* FirebaseDatabase in Frameworks */,
 				80D178BD292A908F005BBD67 /* FirebaseFirestore in Frameworks */,
@@ -151,6 +157,7 @@
 				80F2606B291299110093C6C5 /* ContentView.swift */,
 				8016A249293A4B63002EEFD7 /* NotesView.swift */,
 				8016A24B293A55A0002EEFD7 /* FavoritesView.swift */,
+				806B79BB293CFD0C004F29FB /* WriterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				80C293B029282BC500FEA9BA /* WallpaperViewModel.swift */,
+				8053C536293BAE780045338E /* NoteViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -266,6 +274,7 @@
 				80D178BC292A908F005BBD67 /* FirebaseFirestore */,
 				80D178BE292A908F005BBD67 /* FirebaseFirestoreCombine-Community */,
 				80D178C0292A908F005BBD67 /* FirebaseFirestoreSwift */,
+				8053C53B293BB1B90045338E /* SwiftUIPager */,
 			);
 			productName = Wallaby;
 			productReference = 80F26066291299110093C6C5 /* Wallaby.app */;
@@ -341,6 +350,7 @@
 			mainGroup = 80F2605D291299110093C6C5;
 			packageReferences = (
 				80D178B7292A908F005BBD67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8053C53A293BB1B90045338E /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
 			);
 			productRefGroup = 80F26067291299110093C6C5 /* Products */;
 			projectDirPath = "";
@@ -392,6 +402,7 @@
 				8016A24A293A4B63002EEFD7 /* NotesView.swift in Sources */,
 				8084C17629252E1300AA3BB3 /* Note.swift in Sources */,
 				80F2606C291299110093C6C5 /* ContentView.swift in Sources */,
+				806B79BC293CFD0C004F29FB /* WriterView.swift in Sources */,
 				80C6EC9D29364A0800835BFD /* ImageSaver.swift in Sources */,
 				8066BDE42931192100C3C6D7 /* NoteRepository.swift in Sources */,
 				8016A24F293A5A88002EEFD7 /* FavoriteToggleStyle.swift in Sources */,
@@ -403,6 +414,7 @@
 				80C293B129282BC500FEA9BA /* WallpaperViewModel.swift in Sources */,
 				80747A38292DAD1600D6DFB8 /* Url.swift in Sources */,
 				8066BDE729311AB000C3C6D7 /* ThumbnailView.swift in Sources */,
+				8053C537293BAE780045338E /* NoteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +749,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8053C53A293BB1B90045338E /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		80D178B7292A908F005BBD67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -748,6 +768,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8053C53B293BB1B90045338E /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8053C53A293BB1B90045338E /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
 		80D178B8292A908F005BBD67 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80D178B7292A908F005BBD67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

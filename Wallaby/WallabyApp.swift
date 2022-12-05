@@ -11,6 +11,9 @@ import Firebase
 @main
 struct WallabyApp: App {
 	
+	@StateObject var notesViewModel: NoteViewModel = NoteViewModel()
+	
+	
 	init() {
 		FirebaseApp.configure()
 	}
@@ -18,6 +21,7 @@ struct WallabyApp: App {
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
+				.environmentObject(notesViewModel)
 		}
 	}
 }

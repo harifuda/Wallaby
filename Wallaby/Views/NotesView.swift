@@ -8,13 +8,72 @@
 import SwiftUI
 
 struct NotesView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+	
+	@Environment(\.presentationMode) var presentationMode
 
-struct NotesView_Previews: PreviewProvider {
-    static var previews: some View {
-        NotesView()
-    }
+	@EnvironmentObject var viewModel: NoteViewModel
+	@State var writing: Bool = false
+	@State var editing: Bool = false
+
+	@State private var selectedNote: Note?
+	var body: some View {
+		NavigationView {
+			List {
+				ForEach(viewModel.notes, id:\.id) { note in
+					VStack{
+						Text(note.title)
+							.font(.headline)
+					}
+					.swipeActions {
+						Button {
+							viewModel.deleteNote(note: note)
+						} label: {
+							Label("Delete", systemImage: "trash")
+						}
+						.tint(.red)
+						
+						Button {
+
+						} label: {
+							Label("Update", systemImage: "square.and.pencil")
+						}
+					}
+					.onLongPressGesture {
+						self.selectedNote = note
+					}
+					
+				}
+			}
+			.navigationBarItems(trailing:  Button(action: {
+				self.writing.toggle()
+			}) {
+				Image(systemName: "note.text.badge.plus")
+			})
+			.sheet(item: $selectedNote) { note in
+				NavigationView{
+					VStack {
+						Text(note.title)
+							.font(.headline)
+							.padding()
+						
+						Divider()
+						
+						Text(note.text)
+							.font(.caption)
+							.padding()
+					}
+					.navigationBarItems(trailing: Button {
+						presentationMode.wrappedValue.dismiss()
+					} label: {
+						Text("Exit")
+					})
+				}
+				
+			}
+			.sheet(isPresented: $writing) {
+				WriterView(showWriterView: self.$writing)
+			}
+			
+		}
+	}
 }

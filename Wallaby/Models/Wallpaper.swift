@@ -10,6 +10,7 @@ import FirebaseFirestoreSwift
 
 struct Wallpaper: Identifiable, Codable {
 
+	
 	@DocumentID var id: String?
 	var wallpaperId: String = ""
 	var urls: Url? = nil
