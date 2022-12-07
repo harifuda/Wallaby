@@ -13,6 +13,7 @@ class WebService: ObservableObject {
 	var jsonWallpapers: [Wallpaper] = []
 	let token = "Hq6boUk65Y-dEZhTgzTR3WESV-sdKp0j1YTs8zo9_QE"
 	@Published var publishedWallpapers: [Wallpaper] = []
+	
 	init() {
 		getWallpapers()
 	}

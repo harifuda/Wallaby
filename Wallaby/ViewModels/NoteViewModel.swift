@@ -29,6 +29,7 @@ class NoteViewModel: ObservableObject {
 	}
 	
 	func editNote() {
+		print(updatedNote)
 		self.noteRepository.update(updatedNote)
 	}
 }

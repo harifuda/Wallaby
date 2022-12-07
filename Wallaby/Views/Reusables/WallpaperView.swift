@@ -9,8 +9,11 @@ import UIKit
 import SwiftUI
 
 struct WallpaperView: View {
+	
+	@EnvironmentObject var viewModel: WallpaperViewModel
+	
 	var wallpaper: Wallpaper = Wallpaper()
-	var viewModel = WallpaperViewModel()
+	
 	@State private var showAlert = false
 	@State private var showFavoritedAlert = false
 	@State var liked: Bool = false
@@ -71,15 +74,13 @@ struct WallpaperView: View {
 					})
 					.labelsHidden()
 					.toggleStyle(FavoriteToggleStyle())
-					
-				//
-				//					.alert(isPresented: $showFavoritedAlert) {
-				//						Alert(
-				//							title: Text("Favorited wallpaper."),
-				//							dismissButton: .default(Text("OK"))
-				//						)
-				//					}
-				//
+					.alert(isPresented: $showFavoritedAlert) {
+						Alert(
+							title: Text("Favorited wallpaper."),
+							dismissButton: .default(Text("OK"))
+						)
+					}
+				
 				Button {
 					viewModel.downloadWallpaper(urlString: wallpaper.urls!.full)
 					showAlert = true

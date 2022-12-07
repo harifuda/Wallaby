@@ -55,7 +55,7 @@ class NoteRepository: ObservableObject {
 	func update(_ note: Note) {
 		if let documentId = note.id {
 			do {
-				try store.collection(path).document(documentId).setData(from: ["text": note.text], merge: true)
+				try store.collection(path).document(documentId).setData(from: ["title": note.title, "text": note.text], merge: true)
 			} catch {
 				fatalError("Unable to update document with id: \(documentId)")
 			}

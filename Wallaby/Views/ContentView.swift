@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-	@StateObject var viewModel: WallpaperViewModel = WallpaperViewModel()
+	@EnvironmentObject var viewModel: WallpaperViewModel
 	//var wallpapers = [test,test2]
 	let columns = [GridItem(.flexible()), GridItem(.flexible())]
 	var body: some View {

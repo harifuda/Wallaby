@@ -11,8 +11,7 @@ struct WriterView: View {
 	
 	@Environment(\.presentationMode) var presentationMode
 	
-	@Binding var showWriterView: Bool
-	
+	@Binding var mode: Bool
 	@EnvironmentObject var viewModel: NoteViewModel
 	
 	@State var title: String = ""
@@ -22,11 +21,11 @@ struct WriterView: View {
 		NavigationView {
 			Form {
 				Section(header: Text("Title")) {
-					TextField("Title", text: $title)
+					TextField("Title", text: mode ? $title : $viewModel.updatedNote.title)
 				}
 				
 				Section(header: Text("Notes")) {
-					TextField("Notes", text: $text)
+					TextField("Notes", text: mode ? $text : $viewModel.updatedNote.text)
 				}
 			}
 			.navigationBarItems(leading: Button {
@@ -34,9 +33,15 @@ struct WriterView: View {
 			} label: {
 				Text("Cancel")
 			},trailing: Button {
-				let newNote = Note(title: title, text: text)
-				viewModel.writeNote(note: newNote)
-				self.showWriterView = false
+				if mode == true {
+					let newNote = Note(title: title, text: text)
+					viewModel.writeNote(note: newNote)
+					self.mode = false
+				}
+				else {
+					viewModel.editNote()
+					presentationMode.wrappedValue.dismiss()
+				}
 			} label: {
 				Text("Save")
 			})

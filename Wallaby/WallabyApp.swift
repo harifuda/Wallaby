@@ -12,7 +12,7 @@ import Firebase
 struct WallabyApp: App {
 	
 	@StateObject var notesViewModel: NoteViewModel = NoteViewModel()
-	
+	@StateObject var wallpaperViewModel: WallpaperViewModel = WallpaperViewModel()
 	
 	init() {
 		FirebaseApp.configure()
@@ -22,6 +22,7 @@ struct WallabyApp: App {
 		WindowGroup {
 			ContentView()
 				.environmentObject(notesViewModel)
+				.environmentObject(wallpaperViewModel)
 		}
 	}
 }

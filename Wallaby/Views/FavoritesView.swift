@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct FavoritesView: View {
-	@StateObject var viewModel: WallpaperViewModel = WallpaperViewModel()
+	@EnvironmentObject var viewModel: WallpaperViewModel
 
 	@State var selectedWallpaper: Wallpaper?
     var body: some View {
 		TabView {
 			NavigationView {
-				ScrollView {
+				List {
 					ForEach(viewModel.getFavorites(), id: \.wallpaperId) { image in
 							ThumbnailView(wallpaper: image)
+							.swipeActions {
+								Button(action: {
+									print("Attempting to delete image: \(image.wallpaperId)")
+									viewModel.unfavoriteWallpaper(wallpaper: image)
+								}) {
+									Label("Delete", systemImage: "trash")
+								}
+							}
 							.onTapGesture {
 								self.selectedWallpaper = image
 							}
+							
 					}
 				}
 			}

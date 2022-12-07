@@ -17,7 +17,6 @@ class WallpaperViewModel: ObservableObject {
 		self.webService.$publishedWallpapers
 			.assign(to: \.wallpapers, on: self)
 			.store(in: &cancellables)
-		
 	}
 	
 	func getFavorites() -> [Wallpaper] {

@@ -43,7 +43,6 @@ class WallpaperRepository: ObservableObject {
 	}
 	
 	func delete(_ wallpaper: Wallpaper) {
-		
 		if let documentId = wallpaper.id {
 			store.collection(path).document(documentId).delete { error in
 				if let error = error {

@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct NotesView: View {
-	
-	@Environment(\.presentationMode) var presentationMode
-
+		
 	@EnvironmentObject var viewModel: NoteViewModel
 	@State var writing: Bool = false
 	@State var editing: Bool = false
-
-	@State private var selectedNote: Note?
+	
+	@State private var selected: Bool = false
 	var body: some View {
 		NavigationView {
 			List {
@@ -33,47 +31,40 @@ struct NotesView: View {
 						.tint(.red)
 						
 						Button {
+							viewModel.updatedNote = note
+							self.editing.toggle()
+							print("Edit: \(editing) | Write: \(writing)")
 
 						} label: {
 							Label("Update", systemImage: "square.and.pencil")
 						}
+						.tint(.blue)
+						
+						Button {
+							selected = true
+						} label: {
+							Label("View", systemImage: "note.text")
+						}
+						.tint(.green)
 					}
-					.onLongPressGesture {
-						self.selectedNote = note
+					.alert(isPresented: $selected) {
+						Alert(title: Text(note.title), message: Text(note.text), dismissButton: .default(Text("OK")))
 					}
-					
 				}
 			}
 			.navigationBarItems(trailing:  Button(action: {
 				self.writing.toggle()
+				print("Edit: \(editing) | Write: \(writing)")
+
 			}) {
 				Image(systemName: "note.text.badge.plus")
 			})
-			.sheet(item: $selectedNote) { note in
-				NavigationView{
-					VStack {
-						Text(note.title)
-							.font(.headline)
-							.padding()
-						
-						Divider()
-						
-						Text(note.text)
-							.font(.caption)
-							.padding()
-					}
-					.navigationBarItems(trailing: Button {
-						presentationMode.wrappedValue.dismiss()
-					} label: {
-						Text("Exit")
-					})
-				}
-				
-			}
 			.sheet(isPresented: $writing) {
-				WriterView(showWriterView: self.$writing)
+				WriterView(mode: $writing)
 			}
-			
+			.sheet(isPresented: $editing) {
+				WriterView(mode: $writing)
+			}
 		}
 	}
 }
