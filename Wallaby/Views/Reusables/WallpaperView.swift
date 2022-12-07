@@ -32,11 +32,11 @@ struct WallpaperView: View {
 			}
 			VStack{
 				
-				Text("Author name: \(wallpaper.author?.authorName ?? "undef")")
+				Text("\(wallpaper.author?.authorName ?? "undef")")
 					.font(.headline)
 				
 				
-				Text("Author username: \(wallpaper.author?.authorUsername ?? "undef")")
+				Text("By: \(wallpaper.author?.authorUsername ?? "undef")")
 					.font(.subheadline)
 				
 				
@@ -51,21 +51,6 @@ struct WallpaperView: View {
 		}
 		.toolbar {
 			ToolbarItemGroup {
-				//				Button {
-				//					viewModel.favoriteWallpaper(wallpaper: wallpaper)
-				//					liked = true
-				//					showFavoritedAlert = true
-				//				} label: {
-				//					ZStack {
-				//						Color(.red)
-				//							.frame(width: 40, height: 40)
-				//							.clipShape(Circle())
-				//
-				//						Image(systemName: "heart")
-				//							.font(.subheadline)
-				//							.foregroundColor(.white)
-				//					}
-				
 				Toggle("Favorite", isOn: $liked)
 					.onChange(of: self.liked, perform: { newValue in
 						print("Value changed: \(newValue)")

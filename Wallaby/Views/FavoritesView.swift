@@ -19,7 +19,7 @@ struct FavoritesView: View {
 							ThumbnailView(wallpaper: image)
 							.swipeActions {
 								Button(action: {
-									print("Attempting to delete image: \(image.wallpaperId)")
+									print("Attempting to delete image: \(image.id)")
 									viewModel.unfavoriteWallpaper(wallpaper: image)
 								}) {
 									Label("Delete", systemImage: "trash")

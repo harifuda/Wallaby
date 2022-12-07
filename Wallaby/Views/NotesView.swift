@@ -13,7 +13,7 @@ struct NotesView: View {
 	@State var writing: Bool = false
 	@State var editing: Bool = false
 	
-	@State private var selected: Bool = false
+	@State private var selected: Note?
 	var body: some View {
 		NavigationView {
 			List {
@@ -41,16 +41,18 @@ struct NotesView: View {
 						.tint(.blue)
 						
 						Button {
-							selected = true
+							selected = note
 						} label: {
 							Label("View", systemImage: "note.text")
 						}
 						.tint(.green)
 					}
-					.alert(isPresented: $selected) {
-						Alert(title: Text(note.title), message: Text(note.text), dismissButton: .default(Text("OK")))
-					}
+					
 				}
+			}
+			.alert(item: $selected) { item in
+				Alert(title: Text(item.title), message: Text(item.text), dismissButton: .default(Text("OK")))
+				
 			}
 			.navigationBarItems(trailing:  Button(action: {
 				self.writing.toggle()
