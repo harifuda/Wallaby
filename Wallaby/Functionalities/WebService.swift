@@ -61,8 +61,6 @@ class WebService: ObservableObject {
 		
 	}
 	
-	func searchWallpapers(query: String) {
-		
-	}
+
 }
 

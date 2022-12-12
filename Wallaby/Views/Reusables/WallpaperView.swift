@@ -12,10 +12,11 @@ struct WallpaperView: View {
 	
 	@EnvironmentObject var viewModel: WallpaperViewModel
 	
-	var wallpaper: Wallpaper = Wallpaper()
+	var wallpaper: Wallpaper =  Wallpaper()
 	
 	@State private var showAlert = false
-	@State private var showFavoritedAlert = false
+	@State private var showLikedAlert = false
+
 	@State var liked: Bool = false
 	var body: some View {
 		VStack {
@@ -55,22 +56,21 @@ struct WallpaperView: View {
 					.onChange(of: self.liked, perform: { newValue in
 						print("Value changed: \(newValue)")
 						viewModel.favoriteWallpaper(wallpaper: wallpaper)
-						liked = true
+						showLikedAlert = true
 					})
 					.labelsHidden()
 					.toggleStyle(FavoriteToggleStyle())
-					.alert(isPresented: $showFavoritedAlert) {
+					.alert(isPresented: $showLikedAlert) {
 						Alert(
 							title: Text("Favorited wallpaper."),
 							dismissButton: .default(Text("OK"))
 						)
 					}
 				
-				Button {
+				Button(action:{
 					viewModel.downloadWallpaper(urlString: wallpaper.urls!.full)
-					showAlert = true
-					
-				} label: {
+					showAlert = true }
+				){
 					ZStack {
 						Color(.green)
 							.frame(width: 40, height: 40)
@@ -87,6 +87,7 @@ struct WallpaperView: View {
 						dismissButton: .default(Text("OK"))
 					)
 				}
+				.accessibilityIdentifier("saveAlert")
 			}
 		}
 	}

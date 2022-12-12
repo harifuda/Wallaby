@@ -18,6 +18,7 @@ struct Url: Codable {
 	enum CodingKeys: String, CodingKey {
 		case raw = "raw"
 		case full = "full"
+		case regular = "regular"
 		case small = "small"
 		case thumb = "thumb"
 		case smalls3 = "small_s3"

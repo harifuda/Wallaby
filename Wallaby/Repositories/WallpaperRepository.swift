@@ -31,6 +31,11 @@ class WallpaperRepository: ObservableObject {
 			self.likedWallpaper = snapshot?.documents.compactMap {
 				try? $0.data(as: Wallpaper.self)
 			} ?? []
+			
+			for wid in self.likedWallpaper {
+				print(wid)
+			}
+			
 		}
 	}
 	

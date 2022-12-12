@@ -8,20 +8,24 @@
 import Combine
 
 class WallpaperViewModel: ObservableObject {
+	
 	@Published var wallpaperRepository = WallpaperRepository.shared
 	@Published var webService = WebService.shared
-	@Published var wallpapers = [Wallpaper]() 
+	@Published var wallpapers = [Wallpaper]()
+	@Published var likedWallpapers = [Wallpaper]()
+
 	private var cancellables: Set<AnyCancellable> = []
 
 	init() {
 		self.webService.$publishedWallpapers
 			.assign(to: \.wallpapers, on: self)
 			.store(in: &cancellables)
+		
+		self.wallpaperRepository.$likedWallpaper
+			.assign(to: \.likedWallpapers, on:self)
+			.store(in: &cancellables)
 	}
 	
-	func getFavorites() -> [Wallpaper] {
-		return self.wallpaperRepository.likedWallpaper
-	}
 	func favoriteWallpaper(wallpaper: Wallpaper) {
 		self.wallpaperRepository.add(wallpaper)
 	}

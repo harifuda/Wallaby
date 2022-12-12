@@ -22,15 +22,9 @@
 		8084C17429252DE600AA3BB3 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17329252DE600AA3BB3 /* Author.swift */; };
 		8084C17629252E1300AA3BB3 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084C17529252E1300AA3BB3 /* Note.swift */; };
 		80C293B129282BC500FEA9BA /* WallpaperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B029282BC500FEA9BA /* WallpaperViewModel.swift */; };
-		80C293B229282BC500FEA9BA /* WallpaperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B029282BC500FEA9BA /* WallpaperViewModel.swift */; };
-		80C293B329282BC500FEA9BA /* WallpaperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B029282BC500FEA9BA /* WallpaperViewModel.swift */; };
 		80C293B629287A3C00FEA9BA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B529287A3C00FEA9BA /* WebService.swift */; };
-		80C293B729287A3C00FEA9BA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B529287A3C00FEA9BA /* WebService.swift */; };
-		80C293B829287A3C00FEA9BA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C293B529287A3C00FEA9BA /* WebService.swift */; };
 		80C6EC9D29364A0800835BFD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6EC9C29364A0800835BFD /* ImageSaver.swift */; };
 		80D178B4292A726D005BBD67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D178B3292A726D005BBD67 /* GoogleService-Info.plist */; };
-		80D178B5292A726D005BBD67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D178B3292A726D005BBD67 /* GoogleService-Info.plist */; };
-		80D178B6292A726D005BBD67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D178B3292A726D005BBD67 /* GoogleService-Info.plist */; };
 		80D178B9292A908F005BBD67 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 80D178B8292A908F005BBD67 /* FirebaseDatabase */; };
 		80D178BB292A908F005BBD67 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80D178BA292A908F005BBD67 /* FirebaseDatabaseSwift */; };
 		80D178BD292A908F005BBD67 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 80D178BC292A908F005BBD67 /* FirebaseFirestore */; };
@@ -40,20 +34,12 @@
 		80F2606C291299110093C6C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2606B291299110093C6C5 /* ContentView.swift */; };
 		80F2606E291299160093C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F2606D291299160093C6C5 /* Assets.xcassets */; };
 		80F26071291299160093C6C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F26070291299160093C6C5 /* Preview Assets.xcassets */; };
-		80F2607B291299160093C6C5 /* WallabyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2607A291299160093C6C5 /* WallabyTests.swift */; };
-		80F26085291299170093C6C5 /* WallabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F26084291299170093C6C5 /* WallabyUITests.swift */; };
-		80F26087291299170093C6C5 /* WallabyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F26086291299170093C6C5 /* WallabyUITestsLaunchTests.swift */; };
+		80F45F752942BA66004A6806 /* WallabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F45F742942BA66004A6806 /* WallabyUITests.swift */; };
+		80F45F772942BA66004A6806 /* WallabyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F45F762942BA66004A6806 /* WallabyUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		80F26077291299160093C6C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80F2605E291299110093C6C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 80F26065291299110093C6C5;
-			remoteInfo = Wallaby;
-		};
-		80F26081291299170093C6C5 /* PBXContainerItemProxy */ = {
+		80F45F782942BA66004A6806 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80F2605E291299110093C6C5 /* Project object */;
 			proxyType = 1;
@@ -85,11 +71,9 @@
 		80F2606B291299110093C6C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80F2606D291299160093C6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80F26070291299160093C6C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		80F26076291299160093C6C5 /* WallabyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallabyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		80F2607A291299160093C6C5 /* WallabyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyTests.swift; sourceTree = "<group>"; };
-		80F26080291299170093C6C5 /* WallabyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallabyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		80F26084291299170093C6C5 /* WallabyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyUITests.swift; sourceTree = "<group>"; };
-		80F26086291299170093C6C5 /* WallabyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80F45F722942BA66004A6806 /* WallabyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallabyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F45F742942BA66004A6806 /* WallabyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyUITests.swift; sourceTree = "<group>"; };
+		80F45F762942BA66004A6806 /* WallabyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +90,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80F26073291299160093C6C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80F2607D291299170093C6C5 /* Frameworks */ = {
+		80F45F6F2942BA66004A6806 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,8 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				80F26068291299110093C6C5 /* Wallaby */,
-				80F26079291299160093C6C5 /* WallabyTests */,
-				80F26083291299170093C6C5 /* WallabyUITests */,
+				80F45F732942BA66004A6806 /* WallabyUITests */,
 				80F26067291299110093C6C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,8 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				80F26066291299110093C6C5 /* Wallaby.app */,
-				80F26076291299160093C6C5 /* WallabyTests.xctest */,
-				80F26080291299170093C6C5 /* WallabyUITests.xctest */,
+				80F45F722942BA66004A6806 /* WallabyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,19 +210,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		80F26079291299160093C6C5 /* WallabyTests */ = {
+		80F45F732942BA66004A6806 /* WallabyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				80F2607A291299160093C6C5 /* WallabyTests.swift */,
-			);
-			path = WallabyTests;
-			sourceTree = "<group>";
-		};
-		80F26083291299170093C6C5 /* WallabyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				80F26084291299170093C6C5 /* WallabyUITests.swift */,
-				80F26086291299170093C6C5 /* WallabyUITestsLaunchTests.swift */,
+				80F45F742942BA66004A6806 /* WallabyUITests.swift */,
+				80F45F762942BA66004A6806 /* WallabyUITestsLaunchTests.swift */,
 			);
 			path = WallabyUITests;
 			sourceTree = "<group>";
@@ -280,40 +247,22 @@
 			productReference = 80F26066291299110093C6C5 /* Wallaby.app */;
 			productType = "com.apple.product-type.application";
 		};
-		80F26075291299160093C6C5 /* WallabyTests */ = {
+		80F45F712942BA66004A6806 /* WallabyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80F2608D291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyTests" */;
+			buildConfigurationList = 80F45F7A2942BA66004A6806 /* Build configuration list for PBXNativeTarget "WallabyUITests" */;
 			buildPhases = (
-				80F26072291299160093C6C5 /* Sources */,
-				80F26073291299160093C6C5 /* Frameworks */,
-				80F26074291299160093C6C5 /* Resources */,
+				80F45F6E2942BA66004A6806 /* Sources */,
+				80F45F6F2942BA66004A6806 /* Frameworks */,
+				80F45F702942BA66004A6806 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				80F26078291299160093C6C5 /* PBXTargetDependency */,
-			);
-			name = WallabyTests;
-			productName = WallabyTests;
-			productReference = 80F26076291299160093C6C5 /* WallabyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		80F2607F291299170093C6C5 /* WallabyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80F26090291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyUITests" */;
-			buildPhases = (
-				80F2607C291299170093C6C5 /* Sources */,
-				80F2607D291299170093C6C5 /* Frameworks */,
-				80F2607E291299170093C6C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				80F26082291299170093C6C5 /* PBXTargetDependency */,
+				80F45F792942BA66004A6806 /* PBXTargetDependency */,
 			);
 			name = WallabyUITests;
 			productName = WallabyUITests;
-			productReference = 80F26080291299170093C6C5 /* WallabyUITests.xctest */;
+			productReference = 80F45F722942BA66004A6806 /* WallabyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -323,18 +272,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					80F26065291299110093C6C5 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
-					80F26075291299160093C6C5 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 80F26065291299110093C6C5;
-					};
-					80F2607F291299170093C6C5 = {
-						CreatedOnToolsVersion = 14.0.1;
+					80F45F712942BA66004A6806 = {
+						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 80F26065291299110093C6C5;
 					};
 				};
@@ -351,14 +296,14 @@
 			packageReferences = (
 				80D178B7292A908F005BBD67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8053C53A293BB1B90045338E /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+				80F45F6B2942B7AE004A6806 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 80F26067291299110093C6C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				80F26065291299110093C6C5 /* Wallaby */,
-				80F26075291299160093C6C5 /* WallabyTests */,
-				80F2607F291299170093C6C5 /* WallabyUITests */,
+				80F45F712942BA66004A6806 /* WallabyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,19 +319,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80F26074291299160093C6C5 /* Resources */ = {
+		80F45F702942BA66004A6806 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D178B5292A726D005BBD67 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80F2607E291299170093C6C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80D178B6292A726D005BBD67 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,39 +354,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80F26072291299160093C6C5 /* Sources */ = {
+		80F45F6E2942BA66004A6806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C293B729287A3C00FEA9BA /* WebService.swift in Sources */,
-				80F2607B291299160093C6C5 /* WallabyTests.swift in Sources */,
-				80C293B229282BC500FEA9BA /* WallpaperViewModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80F2607C291299170093C6C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80F26085291299170093C6C5 /* WallabyUITests.swift in Sources */,
-				80F26087291299170093C6C5 /* WallabyUITestsLaunchTests.swift in Sources */,
-				80C293B829287A3C00FEA9BA /* WebService.swift in Sources */,
-				80C293B329282BC500FEA9BA /* WallpaperViewModel.swift in Sources */,
+				80F45F752942BA66004A6806 /* WallabyUITests.swift in Sources */,
+				80F45F772942BA66004A6806 /* WallabyUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		80F26078291299160093C6C5 /* PBXTargetDependency */ = {
+		80F45F792942BA66004A6806 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80F26065291299110093C6C5 /* Wallaby */;
-			targetProxy = 80F26077291299160093C6C5 /* PBXContainerItemProxy */;
-		};
-		80F26082291299170093C6C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 80F26065291299110093C6C5 /* Wallaby */;
-			targetProxy = 80F26081291299170093C6C5 /* PBXContainerItemProxy */;
+			targetProxy = 80F45F782942BA66004A6806 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -505,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -559,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -580,7 +499,7 @@
 				DEVELOPMENT_TEAM = M525S4B69N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your chosen wallpaper to your Photo Library ";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We'll need your approval to save wallpapers to your Photo Library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -611,7 +530,7 @@
 				DEVELOPMENT_TEAM = M525S4B69N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your chosen wallpaper to your Photo Library ";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We'll need your approval to save wallpapers to your Photo Library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -631,54 +550,14 @@
 			};
 			name = Release;
 		};
-		80F2608E291299170093C6C5 /* Debug */ = {
+		80F45F7B2942BA66004A6806 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M525S4B69N;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallaby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wallaby";
-			};
-			name = Debug;
-		};
-		80F2608F291299170093C6C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M525S4B69N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallaby.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wallaby";
-			};
-			name = Release;
-		};
-		80F26091291299170093C6C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M525S4B69N;
-				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -689,14 +568,14 @@
 			};
 			name = Debug;
 		};
-		80F26092291299170093C6C5 /* Release */ = {
+		80F45F7C2942BA66004A6806 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M525S4B69N;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atd.WallabyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -728,20 +607,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80F2608D291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyTests" */ = {
+		80F45F7A2942BA66004A6806 /* Build configuration list for PBXNativeTarget "WallabyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80F2608E291299170093C6C5 /* Debug */,
-				80F2608F291299170093C6C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80F26090291299170093C6C5 /* Build configuration list for PBXNativeTarget "WallabyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				80F26091291299170093C6C5 /* Debug */,
-				80F26092291299170093C6C5 /* Release */,
+				80F45F7B2942BA66004A6806 /* Debug */,
+				80F45F7C2942BA66004A6806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -763,6 +633,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
+			};
+		};
+		80F45F6B2942B7AE004A6806 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

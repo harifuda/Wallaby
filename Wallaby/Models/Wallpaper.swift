@@ -4,13 +4,10 @@
 //
 //  Created by Lukas Nguyen on 2022-11-16.
 //
-
-import SwiftUI
 import FirebaseFirestoreSwift
 
 struct Wallpaper: Identifiable, Codable {
 
-	
 	@DocumentID var id: String?
 	var wallpaperId: String = ""
 	var urls: Url? = nil
@@ -23,6 +20,7 @@ struct Wallpaper: Identifiable, Codable {
 	}
 	
 	init() {}
+	
 	init(wallpaperId: String, urls: Url?, author: Author?) {
 		self.wallpaperId = wallpaperId
 		self.urls = urls

@@ -19,21 +19,25 @@ struct ContentView: View {
 				LazyVGrid(columns: columns, spacing: 11) {
 					ForEach(viewModel.wallpapers, id:\.wallpaperId) {
 						image in
-						HStack{
-							NavigationLink(destination: WallpaperView(wallpaper: image)) {
-								ThumbnailView(wallpaper: image)
-							}
+						NavigationLink(destination: WallpaperView(wallpaper: image)) {
+							ThumbnailView(wallpaper: image)
 						}
+						.accessibilityIdentifier("wallabyImage")
 					}
 				}
-				.navigationTitle(Text("Wallaby"))
-				.toolbar {
-					NavigationLink(destination: FavoritesView()) {
-						Image(systemName: "square.stack")
-							.foregroundColor(.mint)
-					}
+				
+			}
+			.accessibilityIdentifier("mainScrollView")
+			.navigationTitle(Text("Wallaby"))
+			.toolbar {
+				NavigationLink(destination: FavoritesView()) {
+					Image(systemName: "square.stack")
+						.font(.headline)
+						.foregroundColor(.mint)
+						.padding()
 				}
 			}
+			
 		}
 		
 	}

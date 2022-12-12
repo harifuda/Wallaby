@@ -15,7 +15,8 @@ struct ThumbnailView: View {
 				if let image = image {
 					image
 						.resizable()
-						.scaledToFit()
+						.aspectRatio(contentMode: .fit)
+						.cornerRadius(14)
 				}
 			} placeholder: {
 				Image(systemName: "photo")
@@ -24,8 +25,3 @@ struct ThumbnailView: View {
     }
 }
 
-struct ThumbnailView_Previews: PreviewProvider {
-    static var previews: some View {
-		ThumbnailView(wallpaper: test)
-    }
-}

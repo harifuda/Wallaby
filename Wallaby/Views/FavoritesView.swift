@@ -15,7 +15,7 @@ struct FavoritesView: View {
 		TabView {
 			NavigationView {
 				List {
-					ForEach(viewModel.getFavorites(), id: \.wallpaperId) { image in
+					ForEach(viewModel.likedWallpapers, id: \.wallpaperId) { image in
 							ThumbnailView(wallpaper: image)
 							.swipeActions {
 								Button(action: {
@@ -28,9 +28,9 @@ struct FavoritesView: View {
 							.onTapGesture {
 								self.selectedWallpaper = image
 							}
-							
 					}
 				}
+				
 			}
 			.tabItem() {
 				Label("Favorites", systemImage: "heart.circle.fill")
@@ -38,8 +38,6 @@ struct FavoritesView: View {
 			.sheet(item: $selectedWallpaper) { selected in
 				WallpaperView(wallpaper: selected)
 			}
-
-			
 
 			NotesView()
 			.tabItem() {

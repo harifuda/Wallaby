@@ -2,7 +2,7 @@
 //  WallabyUITestsLaunchTests.swift
 //  WallabyUITests
 //
-//  Created by Lukas Nguyen on 2022-11-02.
+//  Created by Lukas Nguyen on 2022-12-08.
 //
 
 import XCTest
