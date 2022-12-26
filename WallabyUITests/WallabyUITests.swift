@@ -44,5 +44,6 @@ final class WallabyUITests: XCTestCase {
 		let target = app.alerts["Success!"]
 		
 		XCTAssertNotNil(target)
+		
 	}
 }
